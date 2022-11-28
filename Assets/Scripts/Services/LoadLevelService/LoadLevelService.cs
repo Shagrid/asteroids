@@ -19,7 +19,7 @@ namespace Asteroids
             var lvl = Data.Instance.LevelsData.GetPrefabLevel(levelNumber);
             _currentLevel = GameObject.Instantiate(lvl);
             var camera = _currentLevel.GetComponentInChildren<Camera>();
-            Services.Instance.CameraServices.SetCamera(camera);
+            Services.Instance.CameraService.SetCamera(camera);
             var spaceshipPosition = GameObject.FindWithTag(TagManager.GetTag(TagType.StartSpaceshipPosition)).transform;
             Data.Instance.Spaceship.Init(spaceship, spaceshipPosition);
             
@@ -29,6 +29,11 @@ namespace Asteroids
         {
             if (_currentLevel == null) return;
             GameObject.Destroy(_currentLevel);
+        }
+        
+        public bool IsLvlLoaded()
+        {
+            return _currentLevel != null;
         }
 
         #endregion

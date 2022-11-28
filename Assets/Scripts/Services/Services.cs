@@ -14,7 +14,8 @@ namespace Asteroids
 
         public static Services Instance => _instance.Value;
         public LoadLevelService LoadLevelService { get; private set; }
-        public CameraServices CameraServices { get; private set; }
+        public CameraService CameraService { get; private set; }
+        public UnityTimeService UnityTimeService { get; private set; }
 
         #endregion
         
@@ -29,7 +30,8 @@ namespace Asteroids
         private void Initialize()
         {
             LoadLevelService = new LoadLevelService();
-            CameraServices = new CameraServices();
+            CameraService = new CameraService();
+            UnityTimeService = new UnityTimeService();
         }
         
         #endregion

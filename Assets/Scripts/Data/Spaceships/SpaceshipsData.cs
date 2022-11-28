@@ -7,8 +7,14 @@ namespace Asteroids
     {
         #region Fields
 
-        [SerializeField] private float _speed = 50f;
+        [SerializeField] private float _speed = 1f;
         private SpaceshipBehaviour _spaceshipBehaviour;
+
+        #endregion
+
+        #region Properties
+
+        [HideInInspector] public SpaceshipBehaviour SpaceshipBehaviour => _spaceshipBehaviour;
 
         #endregion
 
@@ -18,8 +24,13 @@ namespace Asteroids
         {
             var characterBehaviour = CustomResources.Load<SpaceshipBehaviour>
                 (AssetsPathSpaceshipsGameObjects.SpaceshipGameObject[spaceshipType]);
-            _spaceshipBehaviour = GameObject.Instantiate(characterBehaviour, point.position, point.rotation);
+            _spaceshipBehaviour = Instantiate(characterBehaviour, point.position, point.rotation);
             
+        }
+
+        public float GetSpeed()
+        {
+            return _speed;
         }
 
         #endregion

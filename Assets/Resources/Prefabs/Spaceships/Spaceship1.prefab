@@ -274,6 +274,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 951c407da1b692e4cbb4730c54983d12, type: 3}
   m_PrefabInstance: {fileID: 7396886485299382348}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &3502003663822710834
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666934989885633821}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!114 &3769475202373468563
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@
         {
             _initializations = new IInitialization[1];
             _initializations[0] = new LoadlevelController();
-            _executeControllers = new IExecute[0];
+            _executeControllers = new IExecute[1];
+            _executeControllers[0] = new InputController();
         }
         
         public void Init()

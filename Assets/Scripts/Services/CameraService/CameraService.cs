@@ -2,12 +2,12 @@
 
 namespace Asteroids
 {
-    public class CameraServices : Service
+    public class CameraService : Service
     {
         
         public Camera CameraMain { get; private set; }
 
-        public CameraServices()
+        public CameraService()
         {
             CameraMain = Camera.main;
         }
