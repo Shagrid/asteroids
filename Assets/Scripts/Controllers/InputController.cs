@@ -9,6 +9,8 @@ namespace Asteroids
         
         private readonly SpaceshipsData _spaceshipsData;
         private Rigidbody _rigidbody;
+        private const float minPointPosition = 0.05f;
+        private const float maxPointPosition = 0.95f;
         
         #endregion
 
@@ -46,22 +48,22 @@ namespace Asteroids
                 y = 0
             };
             
-            if ((point.x > 1 && moveHorizontal > 0) || (point.x < 0 && moveHorizontal < 0))
+            if ((point.x > maxPointPosition && moveHorizontal > 0) || (point.x < minPointPosition && moveHorizontal < 0))
             {
                 movement.x = 0;
             }
             else
             {
-                movement.x = moveHorizontal;
+                movement.x = moveHorizontal * speed;
             }
             
-            if ((point.y > 1 && moveVertical > 0) || (point.y < 0 && moveVertical < 0))
+            if ((point.y > maxPointPosition && moveVertical > 0) || (point.y < minPointPosition && moveVertical < 0))
             {
                 movement.z = 0;
             }
             else
             {
-                movement.z = moveVertical;
+                movement.z = moveVertical * speed;
             }
             
             SpaceshipRigidbody.velocity = movement;
