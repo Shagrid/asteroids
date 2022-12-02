@@ -9,8 +9,10 @@ namespace Asteroids
         
         private readonly SpaceshipsData _spaceshipsData;
         private Rigidbody _rigidbody;
-        private const float minPointPosition = 0.05f;
-        private const float maxPointPosition = 0.95f;
+        private const float _minPointPosition = 0.05f;
+        private const float _maxPointPosition = 0.95f;
+        private const string _inputHorizontal = "Horizontal";
+        private const string _inputVertical = "Vertical";
         
         #endregion
 
@@ -33,8 +35,8 @@ namespace Asteroids
             {
                 return;
             }
-            var  moveHorizontal = Input.GetAxis("Horizontal");
-            var moveVertical = Input.GetAxis("Vertical");
+            var  moveHorizontal = Input.GetAxis(_inputHorizontal);
+            var moveVertical = Input.GetAxis(_inputVertical);
             Move(moveHorizontal, moveVertical);
         }
 
@@ -48,7 +50,7 @@ namespace Asteroids
                 y = 0
             };
             
-            if ((point.x > maxPointPosition && moveHorizontal > 0) || (point.x < minPointPosition && moveHorizontal < 0))
+            if ((point.x > _maxPointPosition && moveHorizontal > 0) || (point.x < _minPointPosition && moveHorizontal < 0))
             {
                 movement.x = 0;
             }
@@ -57,7 +59,7 @@ namespace Asteroids
                 movement.x = moveHorizontal * speed;
             }
             
-            if ((point.y > maxPointPosition && moveVertical > 0) || (point.y < minPointPosition && moveVertical < 0))
+            if ((point.y > _maxPointPosition && moveVertical > 0) || (point.y < _minPointPosition && moveVertical < 0))
             {
                 movement.z = 0;
             }

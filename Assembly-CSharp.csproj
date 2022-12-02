@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Services\UnityTimeService\UnityTimeService.cs" />
      <Compile Include="Assets\Scripts\Data\Levels\LevelsData.cs" />
      <Compile Include="Assets\Scripts\AssetsPath\AssetsPathSpaceshipsGameObjects.cs" />
      <Compile Include="Assets\Scripts\Services\LoadLevelService\LoadLevelService.cs" />
@@ -48,6 +49,7 @@
      <Compile Include="Assets\Scripts\Services\Service.cs" />
      <Compile Include="Assets\Scripts\Helpers\Managers\TagManager.cs" />
      <Compile Include="Assets\Scripts\Data\Levels\LevelNumbers.cs" />
+     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
      <Compile Include="Assets\Scripts\Data\Data.cs" />
      <Compile Include="Assets\Scripts\Data\Spaceships\SpaceshipsData.cs" />
      <Compile Include="Assets\Scripts\Data\Levels\Level.cs" />
@@ -61,8 +63,6 @@
      <Compile Include="Assets\Scripts\Controllers\Controllers.cs" />
      <Compile Include="Assets\Scripts\Services\Services.cs" />
      <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
-     <Compile Include="Assets\Scripts\Services\UnityTimeService\UnityTimeService.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scripts\Data\Spaceships" />
      <Folder Include="Assets\Scripts\Controllers" />
