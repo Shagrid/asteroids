@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78bcd2922d8f499f93aa1c44aaf139f0, type: 3}
-  m_Name: Data
+  m_Script: {fileID: 11500000, guid: 2275b318b98b4b59aa1bae04d3c4fd2b, type: 3}
+  m_Name: AsteroidsData
   m_EditorClassIdentifier: 
-  _levelsDataPath: Levels/LevelsData
-  _spaceshipDataPath: Spaceships/SpaceshipsData
-  _asteroidsDataPath: Asteroids/AsteroidsData
+  _baseSpeed: 1

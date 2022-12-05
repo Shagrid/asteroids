@@ -46,7 +46,10 @@
      <Compile Include="Assets\Scripts\AssetsPath\AssetsPathSpaceshipsGameObjects.cs" />
      <Compile Include="Assets\Scripts\Services\LoadLevelService\LoadLevelService.cs" />
      <Compile Include="Assets\Scripts\Data\Spaceships\SpaceshipType.cs" />
+     <Compile Include="Assets\Scripts\Controllers\EnemiesController.cs" />
      <Compile Include="Assets\Scripts\Services\Service.cs" />
+     <Compile Include="Assets\Scripts\AssetsPath\AssetsPathAsteroidsGameObjects.cs" />
+     <Compile Include="Assets\Scripts\Data\Asteroids\AsteroidsData.cs" />
      <Compile Include="Assets\Scripts\Helpers\Managers\TagManager.cs" />
      <Compile Include="Assets\Scripts\Data\Levels\LevelNumbers.cs" />
      <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
@@ -72,8 +75,11 @@
      <Folder Include="Assets\Scripts\Services\LoadLevelService" />
      <Folder Include="Assets\Scripts\Type" />
      <Folder Include="Assets\Scripts\Helpers" />
+     <Folder Include="Assets\Resources\Prefabs\Asteroids" />
+     <Folder Include="Assets\Scripts\Helpers\Fabrics" />
      <Folder Include="Assets\Scripts\Helpers\Custom" />
      <Folder Include="Assets\Scripts\Services" />
+     <Folder Include="Assets\Scripts\Data\Asteroids" />
      <Folder Include="Assets\Models\textures" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\Scripts\Services\CameraService" />
@@ -87,6 +93,7 @@
      <Folder Include="Assets\Models\Materials" />
      <Folder Include="Assets\Resources\Prefabs\Spaceships" />
      <Folder Include="Assets\Scripts\Helpers\Managers" />
+     <Folder Include="Assets\Resources\Data\Asteroids" />
      <Folder Include="Assets\Resources\Data\Levels" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Images" />

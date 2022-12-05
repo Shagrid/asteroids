@@ -12,9 +12,11 @@ namespace Asteroids
 
         [SerializeField] private string _levelsDataPath;
         [SerializeField] private string _spaceshipDataPath;
+        [SerializeField] private string _asteroidsDataPath;
         
         private static LevelsData _levelsData;
         private static SpaceshipsData _spaceshipsData;
+        private static AsteroidsData _asteroidsData;
         
         private static readonly Lazy<Data> _instance = new Lazy<Data>(() => Load<Data>("Data/" + typeof(Data).Name));
 
@@ -47,6 +49,19 @@ namespace Asteroids
                 }
 
                 return _spaceshipsData;
+            }
+        }
+        
+        public AsteroidsData Asteroids
+        {
+            get
+            {
+                if (_asteroidsData == null)
+                {
+                    _asteroidsData = Load<AsteroidsData>("Data/" + Instance._asteroidsDataPath);
+                }
+
+                return _asteroidsData;
             }
         }
         
